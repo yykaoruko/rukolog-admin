@@ -1,37 +1,15 @@
 {
   "name": "rukolog-admin",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nuxt",
-    "lint": "eslint --ext .ts,.js,.vue .",
-    "lint:all:fix": "eslint --ext .ts,.js,.vue . --fix"
+    "dev": "next dev -p 4200",
+    "build": "next build",
+    "start": "next start -p 4200"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/yykaoruko/rukolog-admin.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/yykaoruko/rukolog-admin/issues"
-  },
-  "homepage": "https://github.com/yykaoruko/rukolog-admin#readme",
   "dependencies": {
-    "nuxt": "^2.12.2"
-  },
-  "devDependencies": {
-    "@nuxt/typescript-build": "^1.0.0",
-    "@nuxtjs/eslint-config-typescript": "^2.0.0",
-    "babel-eslint": "^10.1.0",
-    "eslint": "^7.1.0",
-    "eslint-config-prettier": "^6.11.0",
-    "eslint-loader": "^4.0.2",
-    "eslint-plugin-prettier": "^3.1.3",
-    "eslint-plugin-vue": "^6.2.2",
-    "nuxt-composition-api": "^0.7.1",
-    "prettier": "^2.0.5"
+    "next": "9.5.2",
+    "react": "16.13.1",
+    "react-dom": "16.13.1"
   }
 }
