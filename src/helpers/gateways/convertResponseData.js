@@ -1,15 +1,15 @@
 export const convertResponseData = async (response) => {
-  const data = await response.json();
   if (response.ok) {
+    const data = await response.json();
     return {
       ok: true,
-      data: data,
+      data,
     }
   } else {
     return {
       ok: false,
       status: response.status,
-      message: response.error,
+      message: response.error || null,
     }
   }
 };
