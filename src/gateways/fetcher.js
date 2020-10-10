@@ -1,5 +1,3 @@
-import { setAccessToken, setClient, setUid } from '../storage'
-
 export const fetcher = (url, method, options = {
   headers: {},
   data: null,
@@ -18,16 +16,5 @@ export const fetcher = (url, method, options = {
     body: options.data ? JSON.stringify(options.data) : null,
     signal: options.signal,
   })
-  .then(response => {
-
-    const accessToken = response.headers.get('access-token');
-    const client = response.headers.get('client');
-    const uid = response.headers.get('uid');
-
-    setAccessToken(accessToken);
-    setClient(client);
-    setUid(uid);
-    
-    return response;
-  });
+  .then(response => response);
 }
