@@ -1,5 +1,5 @@
 import { signin } from '~/src/gateways';
-import { setAccessToken, setClient, setUid } from '~/src/storage'
+import { setAccessToken, setClient, setUid } from '~/src/helpers/storage'
 import { convertResponseSuccess, convertResponseFailure } from '~/src/helpers/service'
 
 export const signinService = async (params) => {
