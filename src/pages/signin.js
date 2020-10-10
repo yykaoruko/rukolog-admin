@@ -1,5 +1,10 @@
+import { DefaultLayout } from '~/src/components/layout'
 import { SigninContainer } from '~/src/components/signin'
 
 export default function SigninPage () {
-  return <SigninContainer />
+  return (
+    <DefaultLayout>
+      <SigninContainer />
+    </DefaultLayout>
+  )
 }
